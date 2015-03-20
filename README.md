@@ -7,7 +7,6 @@ from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 from pyramid.response import Response
 
-
 def hello_world(request):
     return Response('Hello %(name)s!' % request.matchdict)
 
@@ -42,4 +41,4 @@ hello 视图名字   '/hello/{name}'  访问路径
 @view_defaults(route_name='') 类的视图
 @view_config(request_method = 'GET', renderer = 'json') 修饰类中的函数
  
-5.pyhton class中默认调用__call__() 函数
+ 5.pyhton class中默认调用__call__() 函数
